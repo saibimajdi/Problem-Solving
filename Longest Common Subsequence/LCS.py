@@ -15,8 +15,5 @@ def LCS(A, B, j, k):
 
 A = "ABCAS33AS"
 B = "BASWQSSAASD"
-
-res = LCS(A,B,0,0)
-
-print(res)
+print(LCS(A,B,0,0))
 
