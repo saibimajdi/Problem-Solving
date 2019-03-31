@@ -1,12 +1,7 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-
-
+# https://www.hackerrank.com/challenges/linkedin-practice-dynamic-programming-lcs/problem?h_r=internal-search&isFullScreen=false
 def LCS(A, B, j, k, dp):
-
-
     if j == len(A) or k == len(B):
         return ""
-
 
     if dp[j][k] != None:
         return dp[j][k]
@@ -23,19 +18,13 @@ def LCS(A, B, j, k, dp):
     else:
         return resB
 
-
-
+# main
 _input = input().split(' ')
 n = int(_input[0])
 m = int(_input[1])
 
-dp = []
-
-_A = input()
-_B = input()
-
-A = _A.replace(" ", "")
-B = _B.replace(" ", "")
+A = input().replace(" ", "")
+B = input().replace(" ", "")
 
 dp = [[None for i in range(m)] for i in range(n)]
 
